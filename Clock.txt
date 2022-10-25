@@ -1,0 +1,12 @@
+public override string ToString()
+    {
+    return this.hours + ":" + this.limit;
+    }
+    public void Advance()
+    {
+      if (60 <= this.limit)
+      {
+      this.hours = this.hours + 1;
+      this.limit = this.limit - 100;
+      }
+    }
